@@ -39,13 +39,6 @@ bool resolver(const int filas, const int columnas) {
 			v.push_back(dato);
 		}
 		Sol d = degradado(v, 0, v.size());
-		/*if (deg){
-			int mitad = (v.size()) / 2;
-			Sol m1 = degradado(v, 0, mitad);
-			Sol m2 = degradado(v, mitad, v.size());
-			if (m1.deg && m2.deg && m1.suma < m2.suma) deg = true;
-			else deg = false;
-		}*/
 		if(!d.deg) deg = false;
 	}
 	return deg;
